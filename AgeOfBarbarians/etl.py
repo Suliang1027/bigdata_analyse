@@ -23,10 +23,9 @@ for path in os.listdir(dir):
 	print(path)
 	path = os.path.join(dir, path)  # 把目录和文件名合成一个路径
 	data = pd.read_csv(path)
-	data = pd.DataFrame(data,
-						columns=['user_id', 'register_time', 'pvp_battle_count', 'pvp_lanch_count', 'pvp_win_count',
-								 'pve_battle_count', 'pve_lanch_count', 'pve_win_count', 'avg_online_minutes',
-								 'pay_price', 'pay_count']
+	data = pd.DataFrame(data, columns=['user_id', 'register_time', 'pvp_battle_count', 'pvp_lanch_count', 'pvp_win_count',
+									   'pve_battle_count', 'pve_lanch_count', 'pve_win_count', 'avg_online_minutes',
+									   'pay_price', 'pay_count']
 						)
 	data_list.append(data)
 data = pd.concat(data_list)
