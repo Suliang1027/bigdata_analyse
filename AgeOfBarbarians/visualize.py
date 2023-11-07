@@ -11,7 +11,7 @@ from sqlalchemy import create_engine
 from pyecharts import options as opts
 from pyecharts.charts import Pie, Line, Bar, Liquid
 
-engine = create_engine('mysql://root:root@172.16.122.25:3306/test?charset=utf8')
+engine = create_engine('mysql://root:601500@127.0.0.1:3306/test?charset=utf8')
 
 # PU 占比
 sql = """
